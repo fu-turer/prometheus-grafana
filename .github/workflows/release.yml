@@ -33,9 +33,9 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ttbb/integrate:grafana-prometheus
+          tags: ttbb/integrate:prometheus-grafana
       - name: Build container image
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: docker.pkg.github.com/${{ github.repository }}:latest
+          tags: docker.pkg.github.com/${{ github.repository }}/prometheus-grafana:latest
