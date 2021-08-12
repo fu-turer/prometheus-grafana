@@ -1,6 +1,6 @@
 FROM ttbb/grafana:stand-alone AS grafana
 
-FROM ttbb/prometheus:stand-alone
+FROM ttbb/prometheus:mate
 
 COPY --from=grafana /opt/sh/grafana /opt/sh/grafana
 
