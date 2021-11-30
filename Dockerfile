@@ -1,4 +1,4 @@
-FROM ttbb/grafana:stand-alone AS grafana
+FROM ttbb/grafana:mate AS grafana
 
 FROM ttbb/prometheus:mate
 
