@@ -8,6 +8,10 @@ COPY source /opt/sh
 
 WORKDIR /opt/sh
 
+RUN dnf install -yq pip && \
+    dnf clean all && \
+    pip install flask
+
 ENV PROM_HOME /opt/sh/prometheus
 
 ENV GRAFANA_HOME /opt/sh/grafana

@@ -52,6 +52,7 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           body: "Latest docker image"
+          draft: false
           name: "latest docker image"
           tag_name: latest_docker_image
           files: prometheus-grafana.tar.gz

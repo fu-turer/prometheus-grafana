@@ -7,6 +7,10 @@
 ```bash
 -e ZOOKEEPER_TYPE=static -e ZOOKEEPER_HOSTS=127.0.0.1
 ```
+### 添加bookkeeper，固定ip
+```bash
+-e BOOKKEEPER_TYPE=static -e BOOKKEEPER_HOSTS=127.0.0.1
+```
 ## 使用示例
 ### 使用环境变量运行
 ```bash
